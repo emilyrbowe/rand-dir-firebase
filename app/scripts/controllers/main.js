@@ -65,4 +65,46 @@ angular.module('randdirApp')
         landlord: 'Geekdom'
       }
     ];
+    $scope.suites = [
+      {
+        id: 601,
+				suiteName: 'Athlon',
+        floorId: 106
+			},
+			{
+        id: 602,
+        suiteName: 'Atom',
+				floorId: 106
+			},
+			{
+        id: 603,
+        suiteName:'Celeron',
+				floorId: 106
+			},
+			{
+        id: 604,
+        suiteName:'CORE',
+				floorId: 106,
+      },
+      {
+        id: 605,
+        suiteName:'Pentium',
+				floorId: 106,
+      },
+      {
+        id: 606,
+        suiteName:'Phenom',
+				floorId: 106,
+      },
+      {
+        id: 607,
+        suiteName:'Sempron',
+				floorId: 106,
+      },
+      {
+        id: 608,
+        suiteName:'Turion',
+				floorId: 106,
+      },
+    ];
   }]);
