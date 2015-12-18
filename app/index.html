@@ -46,25 +46,26 @@
             </form>
             <br>
             <br>
-            <div  ng-controller="MainCtrl" class="col-md-10">
-            <h6>
+            <div  ng-controller="MainCtrl">
               <ul>
                 <li ng-repeat="floor in floors">
                   {{floor.floorName}}<br/>
                 </li>
               </ul>
-            </h4>
             </div>
           </div>
 
-          <div  ng-controller="MainCtrl" class="col-md-10">
-          <h6>
-            <ul>
-              <li ng-repeat="floor in floors">
-                {{floor.floorName}}<br/>
-              </li>
-            </ul>
-          </h4>
+          <div ng-controller="MainCtrl" class="col-md-10">
+            <div ng-repeat="floor in floors">
+              <h3>
+                {{floor.floorName}}
+              </h3>
+              <ul class="tenants">
+                <li ng-repeat="tenant in floor.tenants">
+                  {{tenant.tenantName}} -- {{tenant.suiteName}}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -78,6 +79,8 @@
       <script src="bower_components/angular-touch/angular-touch.js"></script>
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
       <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="bower_components/firebase/firebase.js"></script>
+      <script src="bower_components/angularfire/dist/angularfire.js"></script>
       <!-- endbower -->
       <!-- endbuild -->
 
