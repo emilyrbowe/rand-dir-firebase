@@ -10,6 +10,7 @@
  */
 angular
   .module('randdirApp', [
+    'firebase',
     'ngAnimate',
     'ngSanitize',
     'ngTouch'
