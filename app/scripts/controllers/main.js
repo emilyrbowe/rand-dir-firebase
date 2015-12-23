@@ -13,5 +13,5 @@ angular.module('randdirApp')
     var floorsRef = fbRef.child('floors');
     $scope.floors = $firebaseArray(floorsRef);
 
-
+    
   }]);
