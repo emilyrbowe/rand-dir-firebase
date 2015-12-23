@@ -1,221 +1,219 @@
-{
-  "floors" : {
-    "100" : {
-      "floorName" : "Basement",
-      "tenants" : {
-        "0-1" : {
-          "suiteName" : "B1",
-          "tenantName" : "ABC"
-        },
-        "0-2" : {
-          "suiteName" : "B2",
-          "tenantName" : "DEF"
-        }
+{"floors" : {
+  "100" : {
+    "floorName" : "Basement",
+    "tenants" : {
+      "0-1" : {
+        "suiteName" : "B1",
+        "tenantName" : "ABC"
+      },
+      "0-2" : {
+        "suiteName" : "B2",
+        "tenantName" : "DEF"
       }
-    },
-    "101" : {
-      "floorName" : "1st Floor",
-      "tenants" : {
-        "1-1" : {
-          "suiteName" : "B1",
-          "tenantName" : "ABC"
-        },
-        "1-2" : {
-          "suiteName" : "B2",
-          "tenantName" : "DEF"
-        }
+    }
+  },
+  "101" : {
+    "floorName" : "1st Floor",
+    "tenants" : {
+      "1-1" : {
+        "suiteName" : "B1",
+        "tenantName" : "ABC"
+      },
+      "1-2" : {
+        "suiteName" : "B2",
+        "tenantName" : "DEF"
       }
-    },
-    "102" : {
-      "floorName" : "2nd Floor",
-      "tenants" : {
-        "2-1" : {
-          "suiteName" : "B1",
-          "tenantName" : "ABC"
-        },
-        "2-2" : {
-          "suiteName" : "B2",
-          "tenantName" : "DEF"
-        }
+    }
+  },
+  "102" : {
+    "floorName" : "2nd Floor",
+    "tenants" : {
+      "2-1" : {
+        "suiteName" : "B1",
+        "tenantName" : "ABC"
+      },
+      "2-2" : {
+        "suiteName" : "B2",
+        "tenantName" : "DEF"
       }
-    },
-    "103" : {
-      "floorName" : "3rd Floor",
-      "tenants" : {
-        "3-1" : {
-          "suiteName" : "B1",
-          "tenantName" : "ABC"
-        },
-        "3-2" : {
-          "suiteName" : "B2",
-          "tenantName" : "DEF"
-        }
+    }
+  },
+  "103" : {
+    "floorName" : "3rd Floor",
+    "tenants" : {
+      "3-1" : {
+        "suiteName" : "B1",
+        "tenantName" : "ABC"
+      },
+      "3-2" : {
+        "suiteName" : "B2",
+        "tenantName" : "DEF"
       }
-    },
-    "104" : {
-      "floorName" : "4th Floor",
-      "tenants" : {
-        "4-1" : {
-          "suiteName" : "410",
-          "tenantName" : "Weston Urban"
-        }
+    }
+  },
+  "104" : {
+    "floorName" : "4th Floor",
+    "tenants" : {
+      "4-1" : {
+        "suiteName" : "410",
+        "tenantName" : "Weston Urban"
       }
-    },
-    "105" : {
-      "floorName" : "5th Floor",
-      "tenants" : {
-        "5-1" : {
-          "suiteName" : "500",
-          "tenantName" : "Rackspace Open Cloud Academy"
-        }
+    }
+  },
+  "105" : {
+    "floorName" : "5th Floor",
+    "tenants" : {
+      "5-1" : {
+        "suiteName" : "500",
+        "tenantName" : "Rackspace Open Cloud Academy"
       }
-    },
-    "106" : {
-      "floorName" : "6th Floor",
-      "tenants" : {
-        "6-1" : {
-          "suiteName" : "Athlon",
-          "tenantName" : "ParLevel Systems"
-        },
-        "6-2" : {
-          "suiteName" : "Atom",
-          "tenantName" : "Pressable"
-        },
-        "6-3" : {
-          "suiteName" : "Celeron",
-          "tenantName" : "Sammis & Ochoa"
-        },
-        "6-4" : {
-          "suiteName" : "CORE",
-          "tenantName" : "MergeVR"
-        },
-        "6-5" : {
-          "suiteName" : "Pentium",
-          "tenantName" : "WP Engine"
-        },
-        "6-6" : {
-          "suiteName" : "Phenom",
-          "tenantName" : "Lightphile"
-        },
-        "6-7" : {
-          "suiteName" : "Sempron",
-          "tenantName" : "Promoter io"
-        },
-        "6-8" : {
-          "suiteName" : "Turion",
-          "tenantName" : "Rivard Report"
-        }
+    }
+  },
+  "106" : {
+    "floorName" : "6th Floor",
+    "tenants" : {
+      "6-1" : {
+        "suiteName" : "Athlon",
+        "tenantName" : "ParLevel Systems"
+      },
+      "6-2" : {
+        "suiteName" : "Atom",
+        "tenantName" : "Pressable"
+      },
+      "6-3" : {
+        "suiteName" : "Celeron",
+        "tenantName" : "Sammis & Ochoa"
+      },
+      "6-4" : {
+        "suiteName" : "CORE",
+        "tenantName" : "MergeVR"
+      },
+      "6-5" : {
+        "suiteName" : "Pentium",
+        "tenantName" : "WP Engine"
+      },
+      "6-6" : {
+        "suiteName" : "Phenom",
+        "tenantName" : "Lightphile"
+      },
+      "6-7" : {
+        "suiteName" : "Sempron",
+        "tenantName" : "Promoter io"
+      },
+      "6-8" : {
+        "suiteName" : "Turion",
+        "tenantName" : "Rivard Report"
       }
-    },
-    "107" : {
-      "floorName" : "7th Floor",
-      "tenants" : {
-        "7-0" : {
-          "suiteName" : "700",
-          "tenantName" : "Geekdom"
-        },
-        "7-1" : {
-          "suiteName" : "Asteroids",
-          "tenantName" : "BoldBrush"
-        },
-        "7-2" : {
-          "suiteName" : "Centipede",
-          "tenantName" : "SA Pets Alive"
-        },
-        "7-3" : {
-          "suiteName" : "Commando",
-          "tenantName" : "Ben Tovar, Cancer Insight, Dick Flume"
-        },
-        "7-4" : {
-          "suiteName" : "Contra",
-          "tenantName" : "Hugh Miller, Postmates, Tech Bloc"
-        },
-        "7-5" : {
-          "suiteName" : "Frogger",
-          "tenantName" : "MWR Legal"
-        },
-        "7-6" : {
-          "suiteName" : "Geek Bar",
-          "tenantName" : "Geekdom"
-        },
-        "7-7" : {
-          "suiteName" : "Joust",
-          "tenantName" : "Help Social"
-        },
-        "7-8" : {
-          "suiteName" : "Mario Kart",
-          "tenantName" : "StratMedical"
-        },
-        "7-9" : {
-          "suiteName" : "Metroid",
-          "tenantName" : "SMSGate, Yupicall"
-          }
-        },
-        "7-10" : {
-          "suiteName" : "Pong",
-          "tenantName" : "Infocyte"
-        },
-        "7-11" : {
-          "suiteName" : "Quake",
-          "tenantName" : "Tidemark"
-        },
-        "7-12" : {
-          "suiteName" : "Street Fighter",
-          "tenantName" : "Tidemark"
-        },
-        "7-13" : {
-          "suiteName" : "Super Mario",
-          "tenantName" : "Infocyte"
-        },
-        "7-14" : {
-          "suiteName" : "Tetris",
-          "tenantName" : "David Blancas"
+    }
+  },
+  "107" : {
+    "floorName" : "7th Floor",
+    "tenants" : {
+      "7-0" : {
+        "suiteName" : "700",
+        "tenantName" : "Geekdom"
+      },
+      "7-1" : {
+        "suiteName" : "Asteroids",
+        "tenantName" : "BoldBrush"
+      },
+      "7-2" : {
+        "suiteName" : "Centipede",
+        "tenantName" : "SA Pets Alive"
+      },
+      "7-3" : {
+        "suiteName" : "Commando",
+        "tenantName" : "Ben Tovar, Cancer Insight, Dick Flume"
+      },
+      "7-4" : {
+        "suiteName" : "Contra",
+        "tenantName" : "Hugh Miller, Postmates, Tech Bloc"
+      },
+      "7-5" : {
+        "suiteName" : "Frogger",
+        "tenantName" : "MWR Legal"
+      },
+      "7-6" : {
+        "suiteName" : "Geek Bar",
+        "tenantName" : "Geekdom"
+      },
+      "7-7" : {
+        "suiteName" : "Joust",
+        "tenantName" : "Help Social"
+      },
+      "7-8" : {
+        "suiteName" : "Mario Kart",
+        "tenantName" : "StratMedical"
+      },
+      "7-9" : {
+        "suiteName" : "Metroid",
+        "tenantName" : "SMSGate, Yupicall"
         }
       },
-    "108" : {
-      "floorName" : "8th Floor",
-      "tenants" : {
-        "8-1" : {
-          "suiteName" : "bam",
-          "tenantName" : "Brendan McHugh, Tex Morgan, TwentySomething SA"
-        },
-        "8-2" : {
-          "suiteName" : "em",
-          "tenantName" : "EverMarket"
-        },
-        "8-3" : {
-          "suiteName" : "exe",
-          "tenantName" : "PowerFin Partners"
-        },
-        "8-4" : {
-          "suiteName" : "mov",
-          "tenantName" : "Key Ideas"
-        },
-        "8-5" : {
-          "suiteName" : "numbers",
-          "tenantName" : "James Brehm & Associates"
-        },
-        "8-6" : {
-          "suiteName" : "qcow",
-          "tenantName" : "VirtKick"
-        },
-        "8-7" : {
-          "suiteName" : "rsp",
-          "tenantName" : "RXSoil"
-        },
-        "8-8" : {
-          "suiteName" : "swift",
-          "tenantName" : "Good Meeting App, Kodeal, Transformative Tech"
-        },
-        "8-9" : {
-          "suiteName" : "torrent",
-          "tenantName" : "Global Infotek"
-        },
-        "8-10" : {
-          "suiteName" : "East Wing",
-          "tenantName" : "Techstars"
-        }
+      "7-10" : {
+        "suiteName" : "Pong",
+        "tenantName" : "Infocyte"
+      },
+      "7-11" : {
+        "suiteName" : "Quake",
+        "tenantName" : "Tidemark"
+      },
+      "7-12" : {
+        "suiteName" : "Street Fighter",
+        "tenantName" : "Tidemark"
+      },
+      "7-13" : {
+        "suiteName" : "Super Mario",
+        "tenantName" : "Infocyte"
+      },
+      "7-14" : {
+        "suiteName" : "Tetris",
+        "tenantName" : "David Blancas"
+      }
+    },
+  "108" : {
+    "floorName" : "8th Floor",
+    "tenants" : {
+      "8-1" : {
+        "suiteName" : "bam",
+        "tenantName" : "Brendan McHugh, Tex Morgan, TwentySomething SA"
+      },
+      "8-2" : {
+        "suiteName" : "em",
+        "tenantName" : "EverMarket"
+      },
+      "8-3" : {
+        "suiteName" : "exe",
+        "tenantName" : "PowerFin Partners"
+      },
+      "8-4" : {
+        "suiteName" : "mov",
+        "tenantName" : "Key Ideas"
+      },
+      "8-5" : {
+        "suiteName" : "numbers",
+        "tenantName" : "James Brehm & Associates"
+      },
+      "8-6" : {
+        "suiteName" : "qcow",
+        "tenantName" : "VirtKick"
+      },
+      "8-7" : {
+        "suiteName" : "rsp",
+        "tenantName" : "RXSoil"
+      },
+      "8-8" : {
+        "suiteName" : "swift",
+        "tenantName" : "Good Meeting App, Kodeal, Transformative Tech"
+      },
+      "8-9" : {
+        "suiteName" : "torrent",
+        "tenantName" : "Global Infotek"
+      },
+      "8-10" : {
+        "suiteName" : "East Wing",
+        "tenantName" : "Techstars"
       }
     }
   }
-}
+}}
