@@ -1,6 +1,6 @@
 {
   "firebase": "rand2",
-  "public": "public",
+  "public": "app",
   "ignore": [
     "firebase.json",
     "**/.*",
