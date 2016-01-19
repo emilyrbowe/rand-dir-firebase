@@ -42,13 +42,13 @@
           <div class="col-md-2" id="leftCol">
             <p>Search by company name or view floor listings.</p>
             <form class="search-form">
-              <input type="text">
+              <input type="text"> <br>
               <button>Search</button>
             </form>
             <br>
             <br>
             <div  ng-controller="MainCtrl">
-              <ul>
+              <ul class="nav nav-stacked">
                 <li ng-repeat="floor in floors">
                   {{floor.floorName}}<br/>
                 </li>
@@ -56,17 +56,36 @@
             </div>
           </div>
 
-          <div ng-controller="MainCtrl" class="col-md-10">
+          <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
             <div ng-repeat="floor in floors">
+              <hr>
               <h3>
                 {{floor.floorName}}
               </h3>
-              <ul class="tenants">
-                <li ng-repeat="tenant in floor.tenants">
-                  {{tenant.tenantName}} -- {{tenant.suiteName}}
-                </li>
-              </ul>
+              <table frame="box">
+                <tr>
+                  <th class="col-md-6">Tenant</th>
+                  <th class="col-md-4">Suite</th>
+                </tr>
+              </table>
+
+                  <ul class="tenants">
+                    <li ng-repeat="tenant in floor.tenants">
+                      <!-- <div class="tenant-box"> -->
+                      <!-- {{tenant.tenantName}} - {{tenant.suiteName}} -->
+                      <!-- <hr style="border-style: dotted"> -->
+                      <!-- <tr> -->
+                      <tr>
+                        <td class="col-md-6"> {{tenant.tenantName}} </td>
+                        <td class="col-md-4"> {{tenant.suiteName}} </td>
+                      </tr>
+                      <!-- </div> -->
+
+                    </li>
+                  </ul>
+
             </div>
+
           </div>
         </div>
       </div>

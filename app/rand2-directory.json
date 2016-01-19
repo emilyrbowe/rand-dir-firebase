@@ -1,7 +1,7 @@
 {"floors" : {
   "100" : {
     "floorName" : "Basement",
-    "tenants" : {
+    "suites" : {
       "0-1" : {
         "suiteName" : "B1",
         "tenantName" : "ABC"
@@ -14,7 +14,7 @@
   },
   "101" : {
     "floorName" : "1st Floor",
-    "tenants" : {
+    "suites" : {
       "1-1" : {
         "suiteName" : "B1",
         "tenantName" : "ABC"
@@ -27,7 +27,7 @@
   },
   "102" : {
     "floorName" : "2nd Floor",
-    "tenants" : {
+    "suites" : {
       "2-1" : {
         "suiteName" : "B1",
         "tenantName" : "ABC"
@@ -40,7 +40,7 @@
   },
   "103" : {
     "floorName" : "3rd Floor",
-    "tenants" : {
+    "suites" : {
       "3-1" : {
         "suiteName" : "B1",
         "tenantName" : "ABC"
@@ -53,7 +53,7 @@
   },
   "104" : {
     "floorName" : "4th Floor",
-    "tenants" : {
+    "suites" : {
       "4-1" : {
         "suiteName" : "410",
         "tenantName" : "Weston Urban"
@@ -62,7 +62,7 @@
   },
   "105" : {
     "floorName" : "5th Floor",
-    "tenants" : {
+    "suites" : {
       "5-1" : {
         "suiteName" : "500",
         "tenantName" : "Rackspace Open Cloud Academy"
@@ -71,7 +71,7 @@
   },
   "106" : {
     "floorName" : "6th Floor",
-    "tenants" : {
+    "suites" : {
       "6-1" : {
         "suiteName" : "Athlon",
         "tenantName" : "ParLevel Systems"
@@ -108,7 +108,7 @@
   },
   "107" : {
     "floorName" : "7th Floor",
-    "tenants" : {
+    "suites" : {
       "7-0" : {
         "suiteName" : "700",
         "tenantName" : "Geekdom"
@@ -148,7 +148,6 @@
       "7-9" : {
         "suiteName" : "Metroid",
         "tenantName" : "SMSGate, Yupicall"
-        }
       },
       "7-10" : {
         "suiteName" : "Pong",
@@ -173,7 +172,7 @@
     },
   "108" : {
     "floorName" : "8th Floor",
-    "tenants" : {
+    "suites" : {
       "8-1" : {
         "suiteName" : "bam",
         "tenantName" : "Brendan McHugh, Tex Morgan, TwentySomething SA"
