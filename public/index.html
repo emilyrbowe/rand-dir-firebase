@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel= "stylesheet">
+    <link href="../bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel= "stylesheet">
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link href="styles/main.css" rel= "stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="randdirApp" class="landing">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Banner -->
+      <section id="banner">
+          <div class="image">
+            <img src="images/temp_logo.png">
+          </div>
+          <div>
+            <h2>Welcome to the Rand</h2>
+            <p>San Antonio's Home for<br>
+                Technology Entrepreneurship </p>
+          </div>
+          <a href="#directory" class="more">Find Your Way</a>
+      </section>
+
+      <div class="container" id=directory>
+      	<div class="row">
+          <!--left-->
+          <div class="col-md-2" id="leftCol">
+            <p>Search by company name or view floor listings.</p>
+            <form class="search-form">
+              <input type="text">
+              <button>Search</button>
+            </form>
+            <br>
+            <br>
+            <div  ng-controller="MainCtrl">
+              <ul>
+                <li ng-repeat="floor in floors">
+                  {{floor.floorName}}<br/>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div ng-controller="MainCtrl" class="col-md-10">
+            <div ng-repeat="floor in floors">
+              <hr>
+              <h3>
+                {{floor.floorName}}
+              </h3>
+              <table frame="box">
+                <tr>
+                  <th class="col-md-6">Tenant</th>
+                  <th class="col-md-4">Suite</th>
+                </tr>
+              </table>
+
+                  <ul class="tenants">
+                    <li ng-repeat="tenant in floor.tenants">
+                      <!-- <div class="tenant-box"> -->
+                      <!-- {{tenant.tenantName}} - {{tenant.suiteName}} -->
+                      <!-- <hr style="border-style: dotted"> -->
+                      <!-- <tr> -->
+                      <tr>
+                        <td class="col-md-6"> {{tenant.tenantName}} </td>
+                        <td class="col-md-4"> {{tenant.suiteName}} </td>
+                      </tr>
+                      <!-- </div> -->
+
+                    </li>
+                  </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- build:js(.) scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-touch/angular-touch.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="bower_components/firebase/firebase.js"></script>
+      <script src="bower_components/angularfire/dist/angularfire.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js({.tmp,app}) scripts/scripts.js -->
+      <script src="scripts/app.js"></script>
+      <script src="scripts/controllers/main.js"></script>
+      <!-- endbuild -->
+    </div>
+  </body>
+</html>
