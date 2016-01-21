@@ -56,27 +56,31 @@
             </div>
           </div>
 
-          <div ng-controller="MainCtrl" class="col-md-10">
+          <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
             <div ng-repeat="floor in floors">
               <hr>
               <h3 id="{{floor.floorName}}">
                 {{floor.floorName}}
               </h3>
-              <table>
-                <tr>
-                  <th class="col-md-6">Tenant</th>
-                  <th class="col-md-4">Suite</th>
-                </tr>
+              <div ng-show="!floor.tenants">
+                <h4>UNDER CONSTRUCTION</h4>
+              </div>
+              <div ng-show="floor.tenants !=null">
+                <table>
+                  <tr>
+                    <th class="col-md-6">Tenant</th>
+                    <th class="col-md-4">Suite</th>
+                  </tr>
 
-                <tr ng-repeat="tenant in floor.tenants">
-                  <td class="col-md-6"> {{tenant.tenantName}} </td>
-                  <td class="col-md-4"> {{tenant.suiteName}} </td>
-                </tr>
-              </table>
-
-            </div>
-
+                  <tr ng-repeat="tenant in floor.tenants">
+                    <td class="col-md-6"> {{tenant.tenantName}} </td>
+                    <td class="col-md-4"> {{tenant.suiteName}} </td>
+                  </tr>
+                </table>
+              </div>
           </div>
+        </div>
+
         </div>
       </div>
 
