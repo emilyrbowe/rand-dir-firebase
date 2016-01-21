@@ -41,7 +41,9 @@
           <!--left-->
           <div class="col-md-2" id="leftCol" text-align: "justify-content">
             <small>Search company by name or view by floor.</small>
-            <input ng-model="query"/>
+            <form class="search-form">
+              <input ng-model="query" type: "search" placeholder="Search">
+            </form>
             <br>
             <br>
             <div  ng-controller="MainCtrl">
@@ -54,16 +56,17 @@
           </div>
           <!--right-->
           <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
+            <hr>
             <div ng-repeat="floor in floors">
-              <hr>
               <h3 id="{{floor.floorName}}">
                 {{floor.floorName}}
               </h3>
-
+              <!-- To show floors that are under construction !-->
               <div ng-show="(!floor.tenants) && (floor.floorName != 'Geekdom Event Centre')">
                 <h4>UNDER CONSTRUCTION</h4>
               </div>
 
+              <!-- To display information about the Geekdom Event Centre !-->
               <div ng-show="floor.floorName =='Geekdom Event Centre'">
                 <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
@@ -71,17 +74,17 @@
               <div ng-show="floor.tenants !=null">
                 <table>
                   <tr>
-                    <th class="col-md-6">Tenant</th>
-                    <th class="col-md-4">Suite</th>
+                    <th class="col-md-8">Tenant </th>
+                    <th class="col-md-4 col-md-offset-8">Suite </th>
                   </tr>
 
                   <tr ng-repeat="tenant in floor.tenants">
-                    <td class="col-md-6"> {{tenant.tenantName}} </td>
-                    <td class="col-md-4"> {{tenant.suiteName}} </td>
+                    <td class="col-md-8"> {{tenant.tenantName}} </td>
+                    <td class="col-md-4 col-md-offset-8"> {{tenant.suiteName}} </td>
                   </tr>
                 </table>
               </div>
-
+              <hr>
           </div>
         </div>
 
