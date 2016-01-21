@@ -252,7 +252,7 @@
 	}
 
 	body.landing.container.row #left-col {
-		position: sticky;
+
 	}
   /* Image */
 
@@ -270,3 +270,17 @@
   			margin-left: auto;
   			margin-right: auto;
   		}
+
+			/*Tables*/
+
+			table.floor-tenants > tbody > tr > td {
+				border-top: 1px solid rgba(255, 255, 255, 0.05);
+			}
+
+			table.floor-tenants > tbody > tr > .tenant {
+				width: 70%;
+			}
+
+			table.floor-tenants > tbody > tr > .suite {
+				width: 30%;
+			}
