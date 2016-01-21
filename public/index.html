@@ -39,11 +39,10 @@
       <div class="container" id=directory>
       	<div class="row">
           <!--left-->
-          <div class="col-md-2" id="leftCol" text-align: "justify-content">
+          <div class="col-md-2" id="leftCol" align: "justify-content">
             <small>Search company by name or view by floor.</small>
             <form class="search-form">
-              <input type="text">
-              <button>Search</button>
+              <input ng-model="query" type: "search" placeholder="Search">
             </form>
             <br>
             <br>
@@ -55,7 +54,7 @@
               </ul>
             </div>
           </div>
-
+          <!--right!-->
           <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
             <hr>
             <div ng-repeat="floor in floors">
