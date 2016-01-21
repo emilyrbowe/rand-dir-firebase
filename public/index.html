@@ -39,8 +39,8 @@
       <div class="container" id=directory>
       	<div class="row">
           <!--left-->
-          <div class="col-md-2" id="leftCol">
-            <p>Search by company name or view floor listings.</p>
+          <div class="col-md-2" id="leftCol" text-align: "justify-content">
+            <small>Search company by name or view by floor.</small>
             <form class="search-form">
               <input type="text">
               <button>Search</button>
@@ -50,7 +50,7 @@
             <div  ng-controller="MainCtrl">
               <ul>
                 <li ng-repeat="floor in floors">
-                  {{floor.floorName}}<br/>
+                  <a href="#{{floor.floorName}}"> <small> {{floor.floorName}} </small> </a><br/>
                 </li>
               </ul>
             </div>
@@ -59,30 +59,20 @@
           <div ng-controller="MainCtrl" class="col-md-10">
             <div ng-repeat="floor in floors">
               <hr>
-              <h3>
+              <h3 id="{{floor.floorName}}">
                 {{floor.floorName}}
               </h3>
-              <table frame="box">
+              <table>
                 <tr>
                   <th class="col-md-6">Tenant</th>
                   <th class="col-md-4">Suite</th>
                 </tr>
+
+                <tr ng-repeat="tenant in floor.tenants">
+                  <td class="col-md-6"> {{tenant.tenantName}} </td>
+                  <td class="col-md-4"> {{tenant.suiteName}} </td>
+                </tr>
               </table>
-
-                  <ul class="tenants">
-                    <li ng-repeat="tenant in floor.tenants">
-                      <!-- <div class="tenant-box"> -->
-                      <!-- {{tenant.tenantName}} - {{tenant.suiteName}} -->
-                      <!-- <hr style="border-style: dotted"> -->
-                      <!-- <tr> -->
-                      <tr>
-                        <td class="col-md-6"> {{tenant.tenantName}} </td>
-                        <td class="col-md-4"> {{tenant.suiteName}} </td>
-                      </tr>
-                      <!-- </div> -->
-
-                    </li>
-                  </ul>
 
             </div>
 
