@@ -71,16 +71,16 @@
                 <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
 
-              <div ng-show="floor.tenants !=null">
-                <table>
+              <div ng-show="floor.tenants !=null" class="row">
+                <table class="floor-tenants table">
                   <tr>
-                    <th class="col-md-8">Tenant </th>
-                    <th class="col-md-4 col-md-offset-8">Suite </th>
+                    <th class="tenant">Tenant </th>
+                    <th class="suite">Suite </th>
                   </tr>
 
-                  <tr ng-repeat="tenant in floor.tenants">
-                    <td class="col-md-8"> {{tenant.tenantName}} </td>
-                    <td class="col-md-4 col-md-offset-8"> {{tenant.suiteName}} </td>
+                  <tr ng-repeat="tenant in floor.tenants | toArray | orderBy: 'tenantName'">
+                    <td class="tenant"> {{tenant.tenantName}} </td>
+                    <td class="suite"> {{tenant.suiteName}} </td>
                   </tr>
                 </table>
               </div>
@@ -101,6 +101,7 @@
       <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
       <script src="bower_components/firebase/firebase.js"></script>
       <script src="bower_components/angularfire/dist/angularfire.js"></script>
+      <script src="bower_components/underscore/underscore.js"></script>
       <!-- endbower -->
       <!-- endbuild -->
 
