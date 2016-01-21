@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -69,16 +70,16 @@
                 <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
 
-              <div ng-show="floor.tenants !=null">
-                <table>
+              <div ng-show="floor.tenants !=null" class="row">
+                <table class="floor-tenants table">
                   <tr>
-                    <th class="col-md-6">Tenant</th>
-                    <th class="col-md-4">Suite</th>
+                    <th class="tenant">Tenant </th>
+                    <th class="suite">Suite </th>
                   </tr>
 
-                  <tr ng-repeat="tenant in floor.tenants">
-                    <td class="col-md-6"> {{tenant.tenantName}} </td>
-                    <td class="col-md-4"> {{tenant.suiteName}} </td>
+                  <tr ng-repeat="tenant in floor.tenants | toArray | orderBy: 'tenantName'">
+                    <td class="tenant"> {{tenant.tenantName}} </td>
+                    <td class="suite"> {{tenant.suiteName}} </td>
                   </tr>
                 </table>
               </div>
