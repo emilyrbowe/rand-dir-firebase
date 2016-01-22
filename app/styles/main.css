@@ -90,23 +90,6 @@
     list-style-type: none;
   }
 
-/* Search form */
-
-  .search-form {
-	    float:left;
-	    display:inline-block;
-	}
-
-	.search-form input {
-	    width: "col-md-2";
-	    height:30px;
-	    padding:0px 0px;
-	    float:left;
-	    border-radius:0px 0px 0px 0px;
-	    font-size:13px;
-			color: black;
-	}
-
 
 /* Banner */
 
@@ -219,27 +202,6 @@
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
-			}
-
-				#banner h2 {
-					font-size: 3 em;
-				}
-
-				#banner br {
-					display: none;
-				}
-
-				#banner .more {
-					display: none;
-				}
-
-		}
 /* Landing */
 
 	body.landing #page-wrapper {
@@ -256,31 +218,64 @@
 	}
   /* Image */
 
-  	.image {
-  		border-radius: 3px;
-  		border: 0;
-  		display: inline-block;
-  		position: relative;
-  	}
+.image {
+	border-radius: 3px;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
 
-  		.image img {
-  			border-radius: 3px;
-  			display: block;
-  			width: 7%;
-  			margin-left: auto;
-  			margin-right: auto;
-  		}
+.image img {
+	border-radius: 3px;
+	display: block;
+	width: 7%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-			/*Tables*/
+/* Navigation Sidebar */
 
-			table.floor-tenants > tbody > tr > td {
-				border-top: 1px solid rgba(255, 255, 255, 0.05);
-			}
+#leftCol{
+	position: sticky;
+	font-size: medium
+}
 
-			table.floor-tenants > tbody > tr > .tenant {
-				width: 70%;
-			}
+#leftCol .nav > li > a{
+	color: #ffffff;
+	text-decoration: none;
+	display: list-item;
+	padding: inherit;
+	position: absolute;
+	font-size: medium;
+}
 
-			table.floor-tenants > tbody > tr > .suite {
-				width: 30%;
-			}
+.search-form {
+    float:left;
+    display:inline-block;
+}
+
+.search-form input {
+    width: "col-md-2";
+    height:30px;
+    padding:0px 0px;
+    float:left;
+    border-radius:0px 0px 0px 0px;
+    font-size:13px;
+		color: black;
+}
+
+
+
+/*Tables*/
+
+table.floor-tenants > tbody > tr > td {
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+table.floor-tenants > tbody > tr > .tenant {
+	width: 70%;
+}
+
+table.floor-tenants > tbody > tr > .suite {
+	width: 30%;
+}

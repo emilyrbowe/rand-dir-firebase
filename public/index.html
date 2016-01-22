@@ -40,33 +40,33 @@
       <div class="container" id=directory>
       	<div class="row">
           <!--left-->
-          <div class="col-md-2" id="leftCol" align: "justify-content">
-            <small>Search company by name or view by floor.</small>
+          <div class="col-md-2" id="leftCol" text-align: "justify-content">
+            Search company by name or view floors.
             <form class="search-form">
               <input ng-model="query" type: "search" placeholder="Search">
             </form>
             <br>
             <br>
             <div  ng-controller="MainCtrl">
-              <ul>
+              <ul class="nav nav-stacked">
                 <li ng-repeat="floor in floors">
-                  <a href="#{{floor.floorName}}"> <small> {{floor.floorName}} </small> </a><br/>
+                  <a href="#{{floor.floorName}}"> {{floor.floorName}} </a><br/>
                 </li>
               </ul>
             </div>
           </div>
           <!--right!-->
-          <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
+          <div ng-controller="MainCtrl" id="rightCol">
             <hr>
             <div ng-repeat="floor in floors">
               <h3 id="{{floor.floorName}}">
                 {{floor.floorName}}
               </h3>
-              <div ng-show="(!floor.tenants) && (floor.floorName != 'Geekdom Event Centre')">
+              <div ng-show="(!floor.tenants) && (floor.floorName != 'Event Centre')">
                 <h4>UNDER CONSTRUCTION</h4>
               </div>
 
-              <div ng-show="floor.floorName =='Geekdom Event Centre'">
+              <div ng-show="floor.floorName =='Event Centre'">
                 <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
 
@@ -83,12 +83,14 @@
                   </tr>
                 </table>
               </div>
-              <hr>
+
+              <br>
+
           </div>
         </div>
 
-        </div>
       </div>
+    </div>
 
       <!-- build:js(.) scripts/vendor.js -->
       <!-- bower:js -->
@@ -101,6 +103,7 @@
       <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
       <script src="/bower_components/firebase/firebase.js"></script>
       <script src="/bower_components/angularfire/dist/angularfire.js"></script>
+      <script src="bower_components/underscore/underscore.js"></script>
       <!-- endbower -->
       <!-- endbuild -->
 
