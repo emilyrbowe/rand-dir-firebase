@@ -55,17 +55,19 @@
               </ul>
             </div>
           </div>
-          <!--right!-->
-          <div ng-controller="MainCtrl" id="rightCol">
-            <hr>
+          <!--right-->
+          <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
+            <!-- <hr> -->
             <div ng-repeat="floor in floors">
               <h3 id="{{floor.floorName}}">
                 {{floor.floorName}}
               </h3>
+              <!-- To show floors that are under construction !-->
               <div ng-show="(!floor.tenants) && (floor.floorName != 'Event Centre')">
-                <h4>UNDER CONSTRUCTION</h4>
+                <h4>-- UNDER CONSTRUCTION --</h4>
               </div>
 
+              <!-- To display information about the Geekdom Event Centre !-->
               <div ng-show="floor.floorName =='Event Centre'">
                 <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
@@ -83,26 +85,24 @@
                   </tr>
                 </table>
               </div>
-
+              <!-- <hr> -->
               <br>
-
           </div>
         </div>
 
       </div>
-    </div>
 
       <!-- build:js(.) scripts/vendor.js -->
       <!-- bower:js -->
-      <script src="/bower_components/jquery/dist/jquery.js"></script>
-      <script src="/bower_components/angular/angular.js"></script>
-      <script src="/bower_components/angular-animate/angular-animate.js"></script>
-      <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-      <script src="/bower_components/angular-touch/angular-touch.js"></script>
-      <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-      <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-      <script src="/bower_components/firebase/firebase.js"></script>
-      <script src="/bower_components/angularfire/dist/angularfire.js"></script>
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-touch/angular-touch.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="bower_components/firebase/firebase.js"></script>
+      <script src="bower_components/angularfire/dist/angularfire.js"></script>
       <script src="bower_components/underscore/underscore.js"></script>
       <!-- endbower -->
       <!-- endbuild -->
