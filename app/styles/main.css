@@ -236,21 +236,46 @@
 /* Navigation Sidebar */
 
 #leftCol{
-	position: sticky;
-	font-size: medium
+	font-size: medium;
+	text-align: center;
+	line-height: normal;
+	max-width: 12em;	
+}
+
+#instructions {
+	font-size: small;
+	/*color: black;*/
+	width: inherit;
+	text-align: justify;;
+}
+
+#leftCol.affix-top {
+	position: static;
+	margin-top: banner;
+}
+
+#leftCol.affix {
+	position: fixed;
+	top:25px;
+	left: 25px;
+	float: left;
+}
+
+#leftCol .nav > li{
+	margin-top: -10px;
 }
 
 #leftCol .nav > li > a{
 	color: #ffffff;
-	text-decoration: none;
 	display: list-item;
-	padding: inherit;
-	position: absolute;
+	padding: 0px 0px;
 	font-size: medium;
+	text-align: center;
+	line-height: inherit;
 }
 
 .search-form {
-    float:left;
+    float: none;;
     display:inline-block;
 }
 
@@ -258,13 +283,11 @@
     width: "col-md-2";
     height:30px;
     padding:0px 0px;
-    float:left;
+    float:center;
     border-radius:0px 0px 0px 0px;
     font-size:13px;
 		color: black;
 }
-
-
 
 /*Tables*/
 

@@ -13,15 +13,6 @@ angular.module('randdirApp')
     var floorsRef = fbRef.child('floors');
     $scope.floors = $firebaseArray(floorsRef);
 
-    // $scope.sortedFloors = null;
-
-    // $scope.floors.$loaded(function(){
-    //   // console.log("The floors are loaded!");
-    //   angular.forEach($scope.floors, function(floor){
-    //     forEach
-    //   })
-    // })
-
 
   }]);
 

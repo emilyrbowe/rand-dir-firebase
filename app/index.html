@@ -25,36 +25,41 @@
     <!-- Page Wrapper -->
     <div id="page-wrapper">
       <!-- Banner -->
-      <section id="banner">
-          <div class="image">
+      <section class="cover" id="banner">
+          <!-- <div class="image">
             <img src="images/temp_logo.png">
-          </div>
+          </div> -->
           <div>
             <h2>Welcome to the Rand</h2>
             <p>San Antonio's Home for<br>
                 Technology Entrepreneurship </p>
           </div>
-          <a href="#directory" class="more">Find Your Way</a>
+          <a href="#directory" class="more" ng-click="{{directoryClick =true}}">Find Your Way</a>
       </section>
 
       <div class="container" id=directory>
       	<div class="row">
           <!--left-->
-          <div class="col-md-2" id="leftCol" text-align: "justify-content">
-            Search company by name or view floors.
-            <form class="search-form">
-              <input ng-model="query" type: "search" placeholder="Search">
-            </form>
-            <br>
-            <br>
-            <div  ng-controller="MainCtrl">
-              <ul class="nav nav-stacked">
-                <li ng-repeat="floor in floors">
-                  <a href="#{{floor.floorName}}"> {{floor.floorName}} </a><br/>
-                </li>
-              </ul>
+          <div class="col-md-2">
+            <div class = "affix" id="leftCol" ng-show="directoryClick">
+              <div> THE RAND </div>
+              <br>
+              <div id="instructions">Search below for company or view by floor listing. </div>
+              <br>
+              <form class="search-form">
+                <input ng-model="query" type: "search" placeholder="Search">
+              </form>
+              <br>
+              <br>
+              <div  ng-controller="MainCtrl">
+                <ul class="nav nav-stacked">
+                  <li ng-repeat="floor in floors">
+                    <a href="#{{floor.floorName}}"> {{floor.floorName}} </a><br/>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+        </div>
           <!--right-->
           <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
             <!-- <hr> -->
@@ -64,11 +69,11 @@
               </h3>
               <!-- To show floors that are under construction !-->
               <div ng-show="(!floor.tenants) && (floor.floorName != 'Event Centre')">
-                <h4>-- UNDER CONSTRUCTION --</h4>
+                <h4>UNDER CONSTRUCTION</h4>
               </div>
 
               <!-- To display information about the Geekdom Event Centre !-->
-              <div ng-show="floor.floorName =='Event Centre'">
+              <div id = "GEC" ng-show="floor.floorName =='Event Centre'">
                 <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
 

@@ -23,3 +23,20 @@ angular.module('randdirApp')
         return Object.defineProperty(val, '$key', {__proto__: null, value: key});
     });
   }});
+
+  // $('#leftCol').affix({
+  //       offset: {
+  //         top: $('section').height()
+  //       };
+  //       console.log("Test")
+  // });
+
+  // $('#directory').onMouseUp({
+  //       directoryClick=true;
+  //       console.log("Test");
+  // });
+
+  angular.module('randdirApp')
+    .controller('searchTenants',function() {return function(obj)
+      if ()
+    })
