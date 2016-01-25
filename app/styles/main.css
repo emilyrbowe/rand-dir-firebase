@@ -239,7 +239,7 @@
 	font-size: medium;
 	text-align: center;
 	line-height: normal;
-	max-width: 12em;	
+	max-width: 10%;
 }
 
 #instructions {
@@ -280,7 +280,7 @@
 }
 
 .search-form input {
-    width: "col-md-2";
+    width: 90%;
     height:30px;
     padding:0px 0px;
     float:center;

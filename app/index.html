@@ -42,8 +42,8 @@
           <!--left-->
           <div class="col-md-2">
             <div class = "affix" id="leftCol" ng-show="directoryClick">
-              <div> THE RAND </div>
-              <br>
+              <h3> THE RAND </h3>
+              <!-- <br> -->
               <div id="instructions">Search below for company or view by floor listing. </div>
               <br>
               <form class="search-form">
@@ -63,7 +63,7 @@
           <!--right-->
           <div ng-controller="MainCtrl" class="col-md-10" id="rightCol">
             <!-- <hr> -->
-            <div ng-repeat="floor in floors">
+            <div ng-repeat="floor in floors | toArray | filter: query">
               <h3 id="{{floor.floorName}}">
                 {{floor.floorName}}
               </h3>
@@ -84,7 +84,7 @@
                     <th class="suite">Suite </th>
                   </tr>
 
-                  <tr ng-repeat="tenant in floor.tenants | toArray | orderBy: 'tenantName'">
+                  <tr ng-repeat="tenant in floor.tenants | toArray | filter: query | orderBy: 'tenantName'">
                     <td class="tenant"> {{tenant.tenantName}} </td>
                     <td class="suite"> {{tenant.suiteName}} </td>
                   </tr>
