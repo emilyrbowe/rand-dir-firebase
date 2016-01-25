@@ -36,7 +36,7 @@ angular.module('randdirApp')
   //       console.log("Test");
   // });
 
-  angular.module('randdirApp')
-    .controller('searchTenants',function() {return function(obj)
-      if ()
-    })
+  // angular.module('randdirApp')
+  //   .controller('searchTenants',function() {return function(obj)
+  //     if ()
+  //   })
