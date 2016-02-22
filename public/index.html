@@ -41,7 +41,7 @@
       	<div class="row">
           <!--left-->
           <div class="col-md-2">
-            <div class = "affix" id="leftCol" ng-show="directoryClick">
+            <div id="leftCol">
               <h3> THE RAND </h3>
               <!-- <br> -->
               <div id="instructions">Search below for company or view by floor listing. </div>
@@ -74,7 +74,7 @@
 
               <!-- To display information about the Geekdom Event Centre !-->
               <div id = "GEC" ng-show="floor.floorName =='Event Centre'">
-                <small>The Geekdom Event Centre is located at 131 Soledad. To get there, exit the building through the doors behind you and take a left, then take a left onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
+                <small>The Geekdom Event Centre is located at 131 Soledad. To get there, turn around and exit the building through the doors behind you. Take a right out of the doors, then another right onto Soledad. You will see a sign above the street for the "Geekdom Event Centre".</small>
               </div>
 
               <div ng-show="floor.tenants !=null" class="row">

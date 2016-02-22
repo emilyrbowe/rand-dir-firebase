@@ -255,7 +255,7 @@
 }
 
 #leftCol.affix {
-	position: fixed;
+	position: static;
 	top:25px;
 	left: 25px;
 	float: left;

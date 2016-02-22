@@ -24,19 +24,9 @@ angular.module('randdirApp')
     });
   }});
 
-  // $('#leftCol').affix({
-  //       offset: {
-  //         top: $('section').height()
-  //       };
-  //       console.log("Test")
-  // });
-
-  // $('#directory').onMouseUp({
-  //       directoryClick=true;
-  //       console.log("Test");
-  // });
-
-  // angular.module('randdirApp')
-  //   .controller('searchTenants',function() {return function(obj)
-  //     if ()
-  //   })
+angular.module('randdirApp')
+  $('#leftCol').affix({
+      offset: {
+        top: $('banner').height()
+      }
+});
